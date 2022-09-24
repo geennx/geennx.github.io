@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+}
+#body-wrapper{
+  margin-left:auto;
+    margin-right:auto;
+      width:100%;
+      display: block;
+      
+}
+body{
+  overflow-y:hidden;
+  overflow-x: hidden;
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+.navigationBar{
+  position:relative;
+  width: 100vw;
+  height: 10.5vh;
+  background: rgb(17, 17, 17);
+  padding: 0,50px;
+  color: white;
+  
+ 
+}
+
+.navigationBar-container{
+  
+  display: flex;
+  align-items: center;
+  
+  height:100%;
+  overflow: auto;
+ 
+  
+}
+.logo-container{
+  flex: 0.7;
+  margin-left: 4vw;
+}
+.logo{
+  border-radius: 15;
+  height: 8vh;
+  min-width: 5vw;
+}
+
+.menu-container{
+  flex: 6;
+  overflow: visible;
+}
+.menu-list{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  font-size: 1.3vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu-list-item{
+  display: flex;
+  margin-right: 1.9vw;
+  color: white;
+  text-decoration: none;
+}
+#animes:hover,#animes{
+  color: green;
+  text-decoration: underline;
+  font-size: 1.4vw;
+}
+
+#home:hover{
+  color: green;
+  text-decoration: underline;
+  
+}
+#animelist:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+.search-container{
+  flex: 1.8;
+  margin-left: 5vw;   
+}
+input{
+  width: 10vw;
+  height: 28px;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  transition: width 1s;
+}
+input:hover{
+  width: 14vw;
+  height: 33px;
+}
+
+.profile-container{
+position: relative;
+flex:0.1vw;
+display: flex;
+align-items: center;
+overflow: auto;
+width: 1vw;
+
+
+
+}
+#view-profile-container{
+position: sticky;
+left:70%;
+height:400px;
+width: 300px;
+background-color: wheat;
+bottom: 206.8px;
+border-bottom-color: #002800;
+border-left-color:#002800;
+border-right-color:#002800;
+border-left-style: solid; border-right-style: solid; border-bottom-style: solid;
+display:none;
+
+}
+.profile-picture{
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-text-container{
+  margin: 0 17px;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+hr{
+  height: 2px;
+  background-color: rgb(0, 40, 0);
+  border: none;
+
+}
+  /*###############################################################################*/
+  
+  .main3-container{
+    background-color: rgb(25, 25, 25);
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    position:relative;
+    display: flex;
+    opacity: 1;
+    
+  }
+  ::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent; 
+  }
+  .left-container{
+    position: relative;
+    flex: 1.5;
+    height: 41vw;
+    width: 100vw;
+    margin-top: 2.5vw;
+    margin-right: 4vw;
+    
+  }
+  #videocontainer{
+    position: relative;
+    height: 36vw;
+    width: 55vw;
+    background-color: rgb(31, 31, 31);
+    border-radius: 1.5vw;
+     
+  }
+  #animetitle{
+    position:relative;
+    color:aliceblue;
+    list-style: none;
+    font-size: 2.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1vw;
+    font-weight: bold;
+  }
+
+  .right-container{
+    padding: 0%;
+    margin-top:2.2vw;
+    flex:1;
+    position: relative;
+    height: 41vw;
+    display:block;
+    
+  }
+  #animeplayer{
+    height:36vw;
+    width:29vw;
+    overflow: auto;
+    
+  }
+  .video-list-container{
+    
+      border-style: solid;
+      border-color: white;
+      list-style: none;
+      border-radius: 0.5vw;
+      position: relative;
+      margin-bottom: 0.8vw;
+      height: 7.3vw;
+      width: 28vw;
+      background-color: rgb(70, 70, 70);
+      transition: all 0.3s ease-in-out;
+      opacity: 0.5;
+  }
+  .video-list-container:hover{
+      opacity:1;
+  }
+  .image-container{
+      position: relative;
+      top: 0.5vw;
+      left: 0.5vw;
+      height: 6.35vw;
+      width: 12vw;
+      border-radius: 1.5vw;
+      background-color: black;
+      
+  }
+ 
+  .episode-number{
+      position: absolute;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: white;
+      font-size: 1.5vw;
+      top: 0.8vw;
+      left:14vw;
+      text-decoration: underline;
+  }
+  #season{
+    width: 7vw;
+    top: 0.8vw;
+    text-align: center;
+    align-self: center;
+    height:2.2vw;
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    cursor: pointer;
+    
+  }
+  .seasonbt{
+    position:relative;
+    color: white;
+    font-size: 1.5vw;
+    list-style: none;
+    border-radius: 1vw;
+  }
+  .seasonsContainer{
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    top: -9.3vw;
+    height:10.1vw;
+    width: 11vw;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-left-radius:0%;
+    border-bottom-right-radius:1vw;
+    display: none;
+  }
+  #season1{
+    border-bottom-right-radius: 1vw;
+  }
+  #season4{
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+  }
+  .seasonNum{
+    height: 2.25vw;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+
+
+  
