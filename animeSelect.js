@@ -22,10 +22,7 @@ animecontainer.forEach((anime,i) =>{
       animename="Eightysix";
       animetitle="Eighty six";
     }
-    else if(animecontainer[i].getAttribute("id")==="Rezero"){
-      animename="Rezero";
-      animetitle="Rezero";
-    }
+    
     localStorage.clear();//delete all local storage
     localStorage.setItem('animetitle',animetitle);//set item to be used in 3rdpage.html
     localStorage.setItem('animetobepassed',animename);//set item to be used in 3rdpage.html
