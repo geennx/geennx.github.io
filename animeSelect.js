@@ -1,4 +1,4 @@
-logobt=document.querySelector("#logo");
+rlogobt=document.querySelector("#logo");
 logobt.addEventListener("click", ()=>{
     window.location.href="Homepage.html";
 })
@@ -23,7 +23,7 @@ animecontainer.forEach((anime,i) =>{
       animetitle="Eighty six";
     }
     else if(animecontainer[i].getAttribute("id")==="rezero"){
-      animename="Re: Zero";
+      animename="re zero";
       animetitle="Re: Zero";
     }
     localStorage.clear();//delete all local storage
