@@ -1,4 +1,4 @@
-logobt=document.querySelector("#logo");
+rlogobt=document.querySelector("#logo");
 logobt.addEventListener("click", ()=>{
     window.location.href="Homepage.html";
 })
