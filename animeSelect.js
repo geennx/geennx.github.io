@@ -14,14 +14,6 @@ animecontainer.forEach((anime,i) =>{
     
     var animename;
     var animetitle;
-    if(animecontainer[i].getAttribute("id")==="darling in the franxx"){
-       animename="darlinginthefranxx";
-       animetitle="Darling in the franxx";
-    }
-    else if(animecontainer[i].getAttribute("id")==="eighty six"){
-      animename="Eightysix";
-      animetitle="Eighty six";
-    }
     
     localStorage.clear();//delete all local storage
     localStorage.setItem('animetitle',animetitle);//set item to be used in 3rdpage.html
