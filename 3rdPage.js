@@ -15,11 +15,12 @@ animecreate(title);
 function animecreate(nameofanime){//create video element from season 1-4
 var animearray=[[],[],[],[]];
 var z=14;
+var episode1 = "https://www.youtube.com/watch?v=xVcX9XQCSHk";
 for(let a=1; a<=z; a++){//SEASON1
       
     let animeS1=[];
-    animeS1[a]=document.createElement('video');
-    animeS1[a].src="animes/"+nameofanime+"/season1/episode"+a+".mp4";
+    animeS1[a]=document.createElement('iframe');
+    animeS1[a].src=""+episode+i;
     animeS1[a].type="hello";
     animeS1[a].className="Anime";
     animeS1[a].id=a; 
