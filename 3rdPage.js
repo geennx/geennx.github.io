@@ -20,7 +20,7 @@ for(let a=1; a<=z; a++){//SEASON1
       
     let animeS1=[];
     animeS1[a]=document.createElement('iframe');
-    animeS1[a].src=""+episode+i;
+    animeS1[a].src=episode1;
     animeS1[a].type="hello";
     animeS1[a].className="Anime";
     animeS1[a].id=a; 
